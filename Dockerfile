@@ -12,6 +12,6 @@ FROM phusion/baseimage
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
 
-apt-get install -y openvpn uuid dnsutils nginx-light
+RUN apt-get update && apt-get install -y openvpn uuid dnsutils nginx-light
 
 
