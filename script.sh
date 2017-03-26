@@ -17,7 +17,10 @@ apt-get install -y     \
   dnsutils             \
   nginx-light
 
-MY_IP_ADDR=$(dig @ns1.google.com -t txt o-o.myaddr.l.google.com +short | sed 's/"//g')
+# External/public IP of the VPN server as seen by the client
+#MY_IP_ADDR=$(dig @ns1.google.com -t txt o-o.myaddr.l.google.com +short | sed 's/"//g')
+MY_IP_ADDR=$1
+
 
 log "IP detected: $MY_IP_ADDR"
 
