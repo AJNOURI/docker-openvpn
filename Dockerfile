@@ -1,4 +1,4 @@
-# DockerVPC image
+# Openvpn docker image
 # AJ NOURI: ajn.bin@gmail.com
 # cciethebeginning.wordpress.com
 #
@@ -12,6 +12,6 @@ FROM phusion/baseimage
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
 
-RUN apt-get update && apt-get install -y openvpn uuid dnsutils nginx-light
+RUN apt-get update && apt-get install -y vim nano openvpn uuid dnsutils nginx-light wget inetutils-traceroute iputils-ping
 
 
