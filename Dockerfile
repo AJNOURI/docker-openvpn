@@ -12,6 +12,6 @@ FROM phusion/baseimage
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
 
-RUN apt-get update && apt-get install -y vim nano openvpn uuid dnsutils nginx-light wget inetutils-traceroute iputils-ping
+RUN apt-get update && apt-get install -y vim nano openvpn uuid dnsutils nginx-light wget inetutils-traceroute iputils-ping wget
 
 
